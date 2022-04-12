@@ -27,13 +27,15 @@ public class Product {
 	}
 	
 	//criando método para remoção de item por lambda
-	public boolean noStaticProductPredicate() {
-		return price >= 100.00;
+	public static boolean staticProductPredicate(Product p) {
+		return p.getPrice() >= 100.00;
 	}
 
 	@Override
 	public String toString() {
 		return product + ", " + String.format("%.2f", price);
 	}
+	
+	
 
 }
