@@ -19,7 +19,7 @@ public class Main {
 		list.add(new Product("Tablet", 350.50));
 		list.add(new Product("HD Case", 80.90));
 		
-		double min = 100.00; //Desta forma o usuário poderia digitar o valor
+		double min = 10.00; //Desta forma o usuário poderia digitar o valor
 		
 		list.removeIf(p -> p.getPrice() >= min); //removendo itens preço menor que 100.00
 		

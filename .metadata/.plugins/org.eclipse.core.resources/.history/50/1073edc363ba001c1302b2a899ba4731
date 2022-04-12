@@ -3,6 +3,7 @@ package br.com.luiz.lista.application;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.function.Predicate;
 
 import br.com.luiz.lista.entitie.Product;
 
