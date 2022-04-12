@@ -26,7 +26,6 @@ public class Product {
 		this.price = price;
 	}
 	
-	//criando método para remoção de item por lambda
 	public static boolean staticProductPredicate(Product p) {
 		return p.getPrice() >= 100.00;
 	}

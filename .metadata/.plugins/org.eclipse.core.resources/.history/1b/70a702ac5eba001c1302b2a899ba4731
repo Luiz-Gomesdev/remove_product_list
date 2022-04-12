@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Locale;
 
 import br.com.luiz.lista.entitie.Product;
+import br.com.luiz.lista.util.ProductPredicate;
 
 public class Main {
 
@@ -19,7 +20,7 @@ public class Main {
 		list.add(new Product("Tablet", 350.50));
 		list.add(new Product("HD Case", 80.90));
 		
-		list.removeIf(Product::staticProductPredicate); //removendo itens preço menor que 100.00
+		list.removeIf(new ProductPredicate()); //removendo itens preço menor que 100.00
 		
 		for (Product p : list) {
 			System.out.println(p);
